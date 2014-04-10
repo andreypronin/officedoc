@@ -1,5 +1,7 @@
 # Officedoc
 
+[![Build Status](https://travis-ci.org/moonfly/officedoc.svg?branch=master)](https://travis-ci.org/moonfly/officedoc)
+
 Parsing and constructing documents using XML-based Office formats: ODF and OOXML.
 
 ## Installation

@@ -4,6 +4,6 @@ rvm:
 env:
   global:
     secure: DzmZmBdrv+tIRNXyqAE1Z7/ksQOmBUThgpeKH2in2vzTZ8q5YAzeQat8YLTW+Z2UcIT7hQMUb+W11rUfPmDCBfcJFn5NaXNowoyHz+CeqJ5XjZtA05o96/8zu6wdh/3d8xfON703SgE7vFGOj3klIqVoBl2ABbk/p2A3sbS7mHs=
-install:
-  - gem install bundler -v 1.6.1
-  - bundle install
+# install:
+#   - gem install bundler -v 1.6.1
+#   - bundle install

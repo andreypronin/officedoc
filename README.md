@@ -41,12 +41,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 Semantic versioning (http://semver.org/spec/v2.0.0.html) is used. 
 
-For a version number MAJOR.MINOR.PATCH:
+For a version number MAJOR.MINOR.PATCH, unless MAJOR is 0:
 
 1. MAJOR version is incremented when incompatible API changes are made,
 2. MINOR version is incremented when functionality is added in a backwards-compatible manner, and
 3. PATCH version is incrementedwhen when backwards-compatible bug fixes are made.
 
+Major version zero (0.y.z) is for initial development. Anything may change at any time. The public API should not be considered stable.
 
 ## Dependencies
 

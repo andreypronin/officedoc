@@ -1,5 +1,9 @@
 require "officedoc/version"
+require "officedoc/null_object"
+require "officedoc/package"
 
 module Officedoc
-  # Your code goes here...
+  def self.open(*args)
+    Officedoc::Package.new(*args)
+  end
 end

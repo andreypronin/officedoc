@@ -1,5 +1,6 @@
 # Officedoc
 
+[![Gem Version](https://badge.fury.io/rb/officedoc.svg)](http://badge.fury.io/rb/officedoc)
 [![GitHub version](https://badge.fury.io/gh/moonfly%2Fofficedoc.svg)](http://badge.fury.io/gh/moonfly%2Fofficedoc)
 [![Build Status](https://travis-ci.org/moonfly/officedoc.svg?branch=master)](https://travis-ci.org/moonfly/officedoc)
 [![Code Climate](https://codeclimate.com/github/moonfly/officedoc.png)](https://codeclimate.com/github/moonfly/officedoc)

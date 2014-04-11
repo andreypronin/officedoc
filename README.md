@@ -3,6 +3,7 @@
 [![GitHub version](https://badge.fury.io/gh/moonfly%2Fofficedoc.svg)](http://badge.fury.io/gh/moonfly%2Fofficedoc)
 [![Build Status](https://travis-ci.org/moonfly/officedoc.svg?branch=master)](https://travis-ci.org/moonfly/officedoc)
 [![Code Climate](https://codeclimate.com/github/moonfly/officedoc.png)](https://codeclimate.com/github/moonfly/officedoc)
+[![Code Coverage](https://codeclimate.com/github/moonfly/officedoc/coverage.png)](https://codeclimate.com/github/moonfly/officedoc)
 [![Dependency Status](https://gemnasium.com/moonfly/officedoc.svg)](https://gemnasium.com/moonfly/officedoc)
 
 Parsing and constructing documents using XML-based Office formats: ODF and OOXML.

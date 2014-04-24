@@ -14,5 +14,8 @@ module Support
     def list_files_in_zip(name)
       `zipinfo -1 #{rspec_file(name)}`.split
     end
+    def output_file_from_zip(name,fname)
+      `unzip -p #{rspec_file(name)} #{fname}`
+    end
   end
 end

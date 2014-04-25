@@ -9,6 +9,8 @@
 
 Parsing and constructing documents using XML-based Office formats: ODF and OOXML.
 
+NOT FOR PUBLIC USE YET. ACTIVE INITIAL DEVELOPMENT IN PROGRESS.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -51,11 +53,13 @@ Semantic versioning (http://semver.org/spec/v2.0.0.html) is used.
 For a version number MAJOR.MINOR.PATCH, unless MAJOR is 0:
 
 1. MAJOR version is incremented when incompatible API changes are made,
-2. MINOR version is incremented when functionality is added in a backwards-compatible manner, and
+2. MINOR version is incremented when functionality is added in a backwards-compatible manner, 
 3. PATCH version is incremented when backwards-compatible bug fixes are made.
 
-Major version zero (0.y.z) is for initial development. Anything may change at any time. 
-The public API should not be considered stable.
+Major version "zero" (0.y.z) is for initial development. Anything may change at any time. 
+The public API should not be considered stable. 
+Furthermore, version "double-zero" (0.0.x) is not intended for public use, 
+as even minimal functionality is not guaranteed to be implemented yet.
 
 ## Dependencies
 

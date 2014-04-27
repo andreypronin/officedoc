@@ -15,7 +15,11 @@ module Support
       `zipinfo -1 #{rspec_file(name)}`.split
     end
     def output_file_from_zip(name,fname)
-      `unzip -p #{rspec_file(name)} #{fname}`
+      # unzip treats [ ] specially, so requires escaping for '[' and ']' in filenames like '[Content_Types].xml'
+      unzip_fname = fname
+        .gsub('[', '\\\\\[')
+        .gsub(']', '\\\\\]')
+      `unzip -p #{rspec_file(name)} #{unzip_fname}`
     end
   end
 end

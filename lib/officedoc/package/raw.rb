@@ -27,10 +27,10 @@ module Officedoc
       private def get_document_type
         # Example: "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"
         main_doc_parts = parts.of_type "document.main+xml", partial: true
-        return "" if main_doc_parts.size != 1
+        return :unknown if main_doc_parts.size != 1
       
         match = /.*\.(.*)\.document\.main\+xml/.match(main_doc_parts[0].type)
-        match ? match[1] : ""
+        match ? match[1].to_sym : :unknown
       end
     end
   end

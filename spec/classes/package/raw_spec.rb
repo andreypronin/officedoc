@@ -35,6 +35,6 @@ describe "Officedoc::Package::Raw" do
     expect(parts[0].name).to eq "/word/document.xml"
   end
   it "should detect the document type" do
-    expect(raw_docx_sample.document_type).to eq "wordprocessingml"
+    expect(raw_docx_sample.document_type).to eq :wordprocessingml
   end
 end

@@ -47,9 +47,9 @@ module Officedoc
           end
         end
         
-        def of_type( type, regexp: false, partial: false )
+        def of_type( type, regex: false, partial: false )
           select do |part| 
-            if regexp 
+            if regex
               part.type.match(type)
             elsif partial
               part.type.include?(type)

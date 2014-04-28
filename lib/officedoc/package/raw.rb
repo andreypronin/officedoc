@@ -25,7 +25,7 @@ module Officedoc
         @document_type ||= get_document_type
       end
       private def get_document_type
-        part = parts.of_type /\.main\+xml\z/, regex: true
+        part = parts.of_type /(document|sheet|presentation)\.main\+xml\z/, regex: true
         return :unknown if part.empty?
         
         case part.first.type

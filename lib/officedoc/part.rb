@@ -22,7 +22,7 @@ module Officedoc
     def related_parts(with_type = nil)
       relations(with_type).map do |entry|
         rel_name = entry["Target"]
-        { type: entry["Type"], name: rel_name, part: list[rel_name], id: entry["Id"] }
+        { type: entry["Type"], name: rel_name, part: @list[rel_name], id: entry["Id"] }
       end
     end
   end
@@ -40,9 +40,11 @@ end
 
 module Officedoc
   class PartsList < SimpleDelegator
+    attr_reader :source
     def initialize(source)
+      @source = source
       super({})
-      source.entries.each do |name|
+      @source.entries.each do |name|
         self[name] = Officedoc::Part.new(self,name)
       end
     end

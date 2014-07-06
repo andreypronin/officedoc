@@ -5,14 +5,14 @@ module Officedoc
         @filename = filename
       end
       def entries
-        @entries ||= String(`zipinfo -1 "#{filename}"`).split
+        @entries ||= String(`zipinfo -1 "#{@filename}"`).split
       end
       def entry(name)
         # unzip treats [ ] specially, so requires escaping for '[' and ']' in filenames like '[Content_Types].xml'
         unzip_fn = name
           .gsub('[', '\\\\\[')
           .gsub(']', '\\\\\]')
-        command = "unzip -p \"#{filename}\" \"#{unzip_fn}\""
+        command = "unzip -p \"#{@filename}\" \"#{unzip_fn}\""
         contents =`#{command}`
         # Can do a StringIO on top of that
         # StringIO.new( contents, "rb" )

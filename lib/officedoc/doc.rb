@@ -7,7 +7,7 @@ module Officedoc
       @source = source
     end
     def parts
-      @parts ||= Officedoc::PartsList(@source)
+      @parts ||= Officedoc::PartsList.new(@source)
     end
     def part_rels
       parts["_rels/.rels"]

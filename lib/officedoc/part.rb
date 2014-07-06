@@ -1,4 +1,5 @@
 require "nokogiri"
+require "delegate"
 
 module Officedoc
   class Part

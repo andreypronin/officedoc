@@ -2,12 +2,6 @@ require "officedoc/part"
 
 module Officedoc
   class Doc
-    NullPart = Officedoc::NullPart.new
-    
-    def self.open(source)
-      self.new(source)
-    end
-    
     attr_reader :source
     def initialize(source)
       @source = source

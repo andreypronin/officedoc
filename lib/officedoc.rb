@@ -4,7 +4,7 @@ require "officedoc/doc"
 require "officedoc/source"
 
 module Officedoc
-  def open(source)
+  def self.open(source)
     Officedoc::Doc.new(source)
   end
 end
